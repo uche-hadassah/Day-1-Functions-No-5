@@ -24,16 +24,18 @@ int main()
 void printChars(char ch1, char ch2, int numberPerLine)
 {
 	char character = ch1;
-	while(character <= ch2)
+	do
 	{
 		for (int i = 0; i < numberPerLine; i++)
 		{
-
-			cout << character << " ";
-			character++;
-		
+			if (character <= ch2)
+			{
+				cout << character << " ";
+				character++;
+			}
+			else
+				break;
 		}
 		cout << endl;
-		
-	}
+	} while (character < ch2 +1);
 }
