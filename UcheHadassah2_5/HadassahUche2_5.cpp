@@ -10,7 +10,15 @@ using namespace std;
 void printChars(char ch1, char ch2, int numberPerLine);
 int main()
 {
-	printChars('d', 'z', 5);
+	char Ch1, Ch2;
+	int numPerLine;
+	cout << "Enter the first character:";
+	cin >> Ch1;
+	cout << "Enter the second character:";
+	cin >> Ch2;
+	cout << "Enter how many characters you want to display per line:";
+	cin >> numPerLine;
+	printChars(Ch1, Ch2, numPerLine);
 	return 0;
 }
 void printChars(char ch1, char ch2, int numberPerLine)
